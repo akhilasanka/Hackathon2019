@@ -1,0 +1,14 @@
+#experience
+{
+    resize: none;
+    overflow-y: scroll;
+    height:300px;
+}
+
+.checked {
+    color: orange;
+  }
+
+.fa-star{
+  margin-right: 0.2em;
+}

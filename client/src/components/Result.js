@@ -44,7 +44,6 @@ class Result extends Component {
                                         <span>Jason</span>
                                     </div>
                                     <div className="row">
-                                    <img src={medal} alt="medal" height="15px" width="15px" />
                                     <i class="fa fa-medal"></i><small style={{fontSize:"10px"}}>&nbsp; 30 Medals</small>
                                     </div>
                                 </Col>
