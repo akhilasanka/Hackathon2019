@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import '../cssFiles/shareExperience.css';
 import swal from 'sweetalert';
-
+import logo from '../images/logo.svg';
 class ShareExperience extends Component {
 
     showAlert = (e) => {
@@ -10,24 +10,31 @@ class ShareExperience extends Component {
         swal('Thank you for sharing your experience!');
         }
 
-        
+
     render() {
         return (
             <div style={{background: "#efefef", height:"100%"}}>
 
                 <div style={{ marginBottom: "1em", background: "#efefef" }}>
                     <div class="header" style={{ background: "black" }}>
-                        <div class="pb-1 border-bottom text-right">
-                            <button type="button" class="btn btn-link" style={{ fontSize: "24px", color: "rgb(216, 174, 47)" }}>Categories</button>
+                        <div class="pb-1 border-bottom">
+                        <img src={logo} alt="logo" height="70px" width="70px" />
+                        <div class="pull-right" style={{marginTop:"0.3em"}}>
+                        <Link className="feed-home-nav" to="/" >
+                            <button type="button" class="btn btn-link" style={{ fontSize: "24px", color: "rgb(216, 174, 47)" }}>Home</button>
+                            
+                            </Link>
                             <button type="button" class="btn btn-link" style={{ fontSize: "24px", color: "rgb(216, 174, 47)" }}>Help</button>
                             <button type="button" class="btn btn-link" style={{ fontSize: "24px", color: "rgb(216, 174, 47)" }}>About Us</button>
-                            <button type="button" class="btn btn-link" style={{ fontSize: "24px", color: "rgb(216, 174, 47)" }}>Login</button></div>
+                            
+                            </div>
+                            </div>
                     </div>
                     <div style={{ height: "100%", background: "#efefef"  }}>
                         <h1 style={{ marginLeft: "1.5em", marginTop: "1em", marginBottom: "0.5em" }}> Share your first time experience  </h1>
                         <form class="form-horizontal" action="/action_page.php" style={{marginLeft:"7.5em"}}>
                         <div class="form-group">
-                                <label class="control-label col-sm-5" for="experience">*Experience, Destination or Business:</label>
+                                <label class="control-label col-sm-5" for="experience">*Title (Experience, Destination or Business):</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="title"/>
                                 </div>

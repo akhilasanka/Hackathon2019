@@ -10,6 +10,7 @@ import beeLogo from '../images/newbie_logo.svg';
 import logoText from '../images/newbie_logotype.svg';
 import collage from '../images/collage.png';
 import { Link } from "react-router-dom";
+import logo from '../images/logo.svg';
 
 class Home extends Component {
 
@@ -17,14 +18,16 @@ class Home extends Component {
         return (
             <div>
                 <div style={{ backgroundImage: `url(${img})`, height:"60vh"}}>
-                <div class="header"><div class="pb-1 border-bottom text-right"> 
-                <button type="button" class="btn btn-link" style={{ fontSize: "24px", color: "rgb(216, 174, 47)"}}>Categories</button> 
+                
+                <div class="header"><div class="pb-1 border-bottom "> 
+                <img src={logo} alt="logo" height="70px" width="70px" />
+                <div className="pull-right" style={{marginTop:"0.3em"}}>
                 <button type="button" class="btn btn-link" style={{ fontSize: "24px", color: "rgb(216, 174, 47)"}}>Help</button> 
                 <button type="button" class="btn btn-link" style={{ fontSize: "24px", color: "rgb(216, 174, 47)"}}>About Us</button>
-                <button type="button" class="btn btn-link" style={{ fontSize: "24px", color: "rgb(216, 174, 47)"}}>Login</button> 
                 <Link to="/submit-experience" >
                 <button type="button float-right" class="btn btn-warning"  style={{margin:"0.5em"}}>Share your experience</button>                                                                  
                 </Link>
+                </div>
                 </div>
                 </div>
                 
@@ -46,7 +49,7 @@ class Home extends Component {
                     
                     <div class="row" style={{backgroundColor:"#efefef"}}>
                         <div className="col-7">
-                        <h1 style={{marginLeft:"2em", marginTop:"1em", marginBottom:"0.5em"}}>First time experiences don't have to be scary. </h1>
+                        <h2 style={{marginLeft:"2em", marginTop:"2em", marginBottom:"0.5em"}}>First time experiences don't have to be scary. </h2>
                            <p style={{marginLeft:"5em",}}>Surfing in Hawaii? Your local yogurt shop? Cross country road trip? We got you covered. Learn about what you’re interested in from people who know first-hand.</p>
                         </div>
                         <div className="col-5" style={{marginTop:"2em", marginLeft:"0px", marginBottom:"2em"}}>
