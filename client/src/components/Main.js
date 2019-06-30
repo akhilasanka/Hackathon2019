@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Route} from 'react-router-dom';
 import Home from './Home';
+import Result from './Result';
 
 class Main extends Component {
     
@@ -10,7 +11,8 @@ class Main extends Component {
             
             <div>
                 {/*Render Different Component based on Route*/}
-                <Route path="/" component={Home}/>
+                <Route exact path="/" component={Home}/>
+                <Route path="/result" component={Result}/>
                 
             </div>
         )

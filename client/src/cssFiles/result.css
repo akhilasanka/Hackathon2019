@@ -1,0 +1,81 @@
+
+.question-card-body{
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    font-family: 'q_serif',Georgia,Times,"Times New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif;
+    background-color: #f7f6ee;
+}
+
+
+.question-card{
+    margin-bottom: 0.5em;
+}
+
+.question-link{
+    color: #333333
+}
+
+.question-link:hover{
+    color: #333333
+}
+
+.close-icon {
+    cursor: pointer;
+  }
+
+
+  form.search-form1 input[type=text] {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid grey;
+    float: left;
+    width: 40%;
+    background: #f1f1f1;
+    border-radius: 10px 0px 0px 10px;
+  }
+  
+  form.search-form1 button {
+    float: left;
+    width: 5%;
+    padding: 10px;
+    background: #ffc107;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    font-size: 12px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.search-form1 button:hover {
+    background: #ffc107;
+  }
+  
+  form.search-form1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .card-desc{
+      font-weight: normal;
+      font-size: 14px;
+      padding-left:1em;
+      padding-top: 0.5em;
+  }
+
+  .avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .tag{
+      font-weight:normal;
+      font-size:14px;
+      margin-right:1.5em;
+      padding:0.2em;
+  }
+
